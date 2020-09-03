@@ -36,7 +36,7 @@ function findVakOpgaveDetails(vakNaam, opgaveNaam){
 
 function studentListHTML(student){
 	// console.log(student);
-	return '<tr class="student"><td>' + student.naam + '</td><td>' + student.status.icon + ' (' + student.status.text + ')</td></tr>';
+	return '<tr class="student" data-contact="'+ student.contact +'"><td>' + student.naam + '</td><td>' + student.status.icon + ' (' + student.status.text + ')</td></tr>';
 }
 
 function showOpgaveDetails(opgave){
@@ -49,13 +49,17 @@ function showOpgaveDetails(opgave){
 	console.log(studentlijst);
 	studentlijst.empty();
 
-	// console.log(opgave);
-	// console.log(opgave.studentVoortgang);
 	for(student of opgave.studentVoortgang){
-		// console.log(student);
 		var studentHtml = studentListHTML(student);
 		studentlijst.append(studentHtml);
 	}
+
+	$(".student").click(function(event){
+		var parentRow = $(event.target).parent();
+		console.log(parentRow);
+		var targetContact = parentRow.data('contact');
+		window.prompt('', targetContact);
+	});
 };
 
 $(function(){
@@ -65,7 +69,6 @@ $(function(){
 	container.empty();
 
 	for(vak of data){
-
 		container.append(vakListHTML(vak));
 		for(opgave of vak["opgaven"]){
 			var html = opgaveListHTML(opgave, vak);
@@ -79,7 +82,6 @@ $(function(){
 
 		// toon details
 		var details = findVakOpgaveDetails(vak, opgave);
-
 		showOpgaveDetails(details);
 	});
 });

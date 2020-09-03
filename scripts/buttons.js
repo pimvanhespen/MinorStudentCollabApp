@@ -1,11 +1,11 @@
 $("#button-begonnen").click(function() {
-    $("#test-button").append("<p>Begonnen</p>");
+	alert("Begonnen!");
 });
 
 $("#button-afgerond").click(function() {
-    $("#test-button").append("<p>Afgerond</p>");
+   alert("Afgerond!"); 
 });
 
 $("#button-help").click(function() {
-    $("#test-button").append("<p>Help</p>");
+    alert("Help!");
 });

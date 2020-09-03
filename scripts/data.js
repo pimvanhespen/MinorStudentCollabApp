@@ -5,7 +5,7 @@ var studenten = new Array();
 // constants
 var DEBUG = false;
 var DOCENT_NAAM = "Kees";
-var MAX_OPGAVEN = 3;
+var MAX_OPGAVEN = 5;
 
 function status(text, icon){
 	return {
@@ -38,9 +38,6 @@ var STUDENT_NAMEN = [
 	'Iske',
 ];
 
-console.log(USERNAME);
-STUDENT_NAMEN.push(USERNAME);
-
 // helper functions
 function calcStatus(current, max) {
 	if( current < max )
@@ -53,21 +50,31 @@ function calcStatus(current, max) {
 
 function generateProgress(student, opgave){
 	return	{
-		"naam": student["naam"],
+		"naam": student.naam,
+		"contact": student.contact,
 		"status": calcStatus(opgave, student["voortgang"]), 
 	};
 }
 
 // script execution starts 
 
-// Generate student objects
-for(naam of STUDENT_NAMEN){
+function generateStudent(naam, contact, voortgang){
 	var student = {
 		"naam": naam, 
-		"voortgang": Math.floor(Math.random() * 3),
+		"contact": contact,
+		"voortgang": voortgang,
 	};
+	return student;
+}
+
+// Generate student objects
+for(naam of STUDENT_NAMEN){
+	var studentMail = naam + "@dontMail.me";
+	var student = generateStudent(naam,  studentMail, Math.floor(Math.random() * MAX_OPGAVEN));
 	studenten.push(student);
 }
+
+studenten.push(generateStudent(USERNAME, CONTACT_INFO, 0));
 
 // Populate the 'vakdata' list with information about each 'vak'
 for(vaknaam of VAK_NAMEN){
