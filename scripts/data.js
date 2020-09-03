@@ -82,7 +82,6 @@ for(vaknaam of VAK_NAMEN){
 		for( student of studenten ){
 			
 			var studentVoortgang = generateProgress(student, i);
-
 			studentenVoortgang.push(studentVoortgang);
 		}
 
