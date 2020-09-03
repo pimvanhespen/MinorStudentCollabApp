@@ -7,10 +7,17 @@ var DEBUG = false;
 var DOCENT_NAAM = "Kees";
 var MAX_OPGAVEN = 3;
 
-var STATUS_NIET_BEGONNEN = "niet begonnen";
-var STATUS_BEGONNEN = "begonnen";
-var STATUS_AFGEROND = "afgerond";
-var STATUS_HULPVRAAG = "hulpvraag";
+function status(text, icon){
+	return {
+		"text": text,
+		"icon": icon,
+	};
+}
+
+var STATUS_NIET_BEGONNEN = status("niet begonnen","&#x2715;");
+var STATUS_BEGONNEN = status("begonnen","&#128187;");
+var STATUS_AFGEROND = status("afgerond","&#127937;");
+var STATUS_HULPVRAAG = status("hulpvraag","&#128565;");
 
 
 var VAK_NAMEN = [
@@ -31,6 +38,9 @@ var STUDENT_NAMEN = [
 	'Iske',
 ];
 
+console.log(USERNAME);
+STUDENT_NAMEN.push(USERNAME);
+
 // helper functions
 function calcStatus(current, max) {
 	if( current < max )
@@ -39,6 +49,13 @@ function calcStatus(current, max) {
 		return STATUS_NIET_BEGONNEN;
 	// schijn randomness
 	return Math.random() > 0.5 ? STATUS_BEGONNEN : STATUS_HULPVRAAG;
+}
+
+function generateProgress(student, opgave){
+	return	{
+		"naam": student["naam"],
+		"status": calcStatus(opgave, student["voortgang"]), 
+	};
 }
 
 // script execution starts 
@@ -64,10 +81,7 @@ for(vaknaam of VAK_NAMEN){
 		var studentenVoortgang = new Array();
 		for( student of studenten ){
 			
-			var studentVoortgang = {
-				"naam": student["naam"],
-				"status": calcStatus(i, student["voortgang"]), 
-			}
+			var studentVoortgang = generateProgress(student, i);
 
 			studentenVoortgang.push(studentVoortgang);
 		}
@@ -82,12 +96,14 @@ for(vaknaam of VAK_NAMEN){
 
 	var vak = {
 		"naam": vaknaam,
-		"DOCENT_NAAM": DOCENT_NAAM,
+		"docent_naam": DOCENT_NAAM,
 		"opgaven": opgaven,
 	};
 
 	vakdata.push(vak);
 }
+
+localStorage.setItem("vak-data", JSON.stringify(vakdata));
 
 // debug only
 function htmlLog(str){
@@ -97,9 +113,4 @@ function htmlLog(str){
 
 function pretty(obj){
 	return JSON.stringify(obj, null, 2);
-}
-
-if(DEBUG){
-	htmlLog(pretty(studenten));
-	htmlLog(pretty(vakdata));
 }

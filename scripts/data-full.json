@@ -1,7 +1,7 @@
 [
   {
     "naam": "Onwerpen",
-    "DOCENT_NAAM": "Kees",
+    "docent_naam": "Kees",
     "opgaven": [
       {
         "naam": "opgave 1",
