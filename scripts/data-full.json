@@ -1,0 +1,398 @@
+[
+  {
+    "naam": "Onwerpen",
+    "DOCENT_NAAM": "Kees",
+    "opgaven": [
+      {
+        "naam": "opgave 1",
+        "details": "Lorem ipsum dolor sit amet...",
+        "studentVoortgang": [
+          {
+            "naam": "Anna",
+            "status": "niet begonnen"
+          },
+          {
+            "naam": "Bert",
+            "status": "begonnen"
+          },
+          {
+            "naam": "Caro",
+            "status": "afgerond"
+          },
+          {
+            "naam": "Derk",
+            "status": "afgerond"
+          },
+          {
+            "naam": "Eddy",
+            "status": "afgerond"
+          },
+          {
+            "naam": "Fien",
+            "status": "begonnen"
+          },
+          {
+            "naam": "Geer",
+            "status": "hulpvraag"
+          },
+          {
+            "naam": "Henk",
+            "status": "begonnen"
+          },
+          {
+            "naam": "Iske",
+            "status": "begonnen"
+          }
+        ]
+      },
+      {
+        "naam": "opgave 2",
+        "details": "Lorem ipsum dolor sit amet...",
+        "studentVoortgang": [
+          {
+            "naam": "Anna",
+            "status": "niet begonnen"
+          },
+          {
+            "naam": "Bert",
+            "status": "niet begonnen"
+          },
+          {
+            "naam": "Caro",
+            "status": "begonnen"
+          },
+          {
+            "naam": "Derk",
+            "status": "begonnen"
+          },
+          {
+            "naam": "Eddy",
+            "status": "begonnen"
+          },
+          {
+            "naam": "Fien",
+            "status": "niet begonnen"
+          },
+          {
+            "naam": "Geer",
+            "status": "niet begonnen"
+          },
+          {
+            "naam": "Henk",
+            "status": "niet begonnen"
+          },
+          {
+            "naam": "Iske",
+            "status": "niet begonnen"
+          }
+        ]
+      },
+      {
+        "naam": "opgave 3",
+        "details": "Lorem ipsum dolor sit amet...",
+        "studentVoortgang": [
+          {
+            "naam": "Anna",
+            "status": "niet begonnen"
+          },
+          {
+            "naam": "Bert",
+            "status": "niet begonnen"
+          },
+          {
+            "naam": "Caro",
+            "status": "niet begonnen"
+          },
+          {
+            "naam": "Derk",
+            "status": "niet begonnen"
+          },
+          {
+            "naam": "Eddy",
+            "status": "niet begonnen"
+          },
+          {
+            "naam": "Fien",
+            "status": "niet begonnen"
+          },
+          {
+            "naam": "Geer",
+            "status": "niet begonnen"
+          },
+          {
+            "naam": "Henk",
+            "status": "niet begonnen"
+          },
+          {
+            "naam": "Iske",
+            "status": "niet begonnen"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "naam": "Buitenspelen",
+    "DOCENT_NAAM": "Kees",
+    "opgaven": [
+      {
+        "naam": "opgave 1",
+        "details": "Lorem ipsum dolor sit amet...",
+        "studentVoortgang": [
+          {
+            "naam": "Anna",
+            "status": "niet begonnen"
+          },
+          {
+            "naam": "Bert",
+            "status": "hulpvraag"
+          },
+          {
+            "naam": "Caro",
+            "status": "afgerond"
+          },
+          {
+            "naam": "Derk",
+            "status": "afgerond"
+          },
+          {
+            "naam": "Eddy",
+            "status": "afgerond"
+          },
+          {
+            "naam": "Fien",
+            "status": "hulpvraag"
+          },
+          {
+            "naam": "Geer",
+            "status": "begonnen"
+          },
+          {
+            "naam": "Henk",
+            "status": "begonnen"
+          },
+          {
+            "naam": "Iske",
+            "status": "begonnen"
+          }
+        ]
+      },
+      {
+        "naam": "opgave 2",
+        "details": "Lorem ipsum dolor sit amet...",
+        "studentVoortgang": [
+          {
+            "naam": "Anna",
+            "status": "niet begonnen"
+          },
+          {
+            "naam": "Bert",
+            "status": "niet begonnen"
+          },
+          {
+            "naam": "Caro",
+            "status": "begonnen"
+          },
+          {
+            "naam": "Derk",
+            "status": "begonnen"
+          },
+          {
+            "naam": "Eddy",
+            "status": "hulpvraag"
+          },
+          {
+            "naam": "Fien",
+            "status": "niet begonnen"
+          },
+          {
+            "naam": "Geer",
+            "status": "niet begonnen"
+          },
+          {
+            "naam": "Henk",
+            "status": "niet begonnen"
+          },
+          {
+            "naam": "Iske",
+            "status": "niet begonnen"
+          }
+        ]
+      },
+      {
+        "naam": "opgave 3",
+        "details": "Lorem ipsum dolor sit amet...",
+        "studentVoortgang": [
+          {
+            "naam": "Anna",
+            "status": "niet begonnen"
+          },
+          {
+            "naam": "Bert",
+            "status": "niet begonnen"
+          },
+          {
+            "naam": "Caro",
+            "status": "niet begonnen"
+          },
+          {
+            "naam": "Derk",
+            "status": "niet begonnen"
+          },
+          {
+            "naam": "Eddy",
+            "status": "niet begonnen"
+          },
+          {
+            "naam": "Fien",
+            "status": "niet begonnen"
+          },
+          {
+            "naam": "Geer",
+            "status": "niet begonnen"
+          },
+          {
+            "naam": "Henk",
+            "status": "niet begonnen"
+          },
+          {
+            "naam": "Iske",
+            "status": "niet begonnen"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "naam": "Internetten",
+    "DOCENT_NAAM": "Kees",
+    "opgaven": [
+      {
+        "naam": "opgave 1",
+        "details": "Lorem ipsum dolor sit amet...",
+        "studentVoortgang": [
+          {
+            "naam": "Anna",
+            "status": "niet begonnen"
+          },
+          {
+            "naam": "Bert",
+            "status": "hulpvraag"
+          },
+          {
+            "naam": "Caro",
+            "status": "afgerond"
+          },
+          {
+            "naam": "Derk",
+            "status": "afgerond"
+          },
+          {
+            "naam": "Eddy",
+            "status": "afgerond"
+          },
+          {
+            "naam": "Fien",
+            "status": "begonnen"
+          },
+          {
+            "naam": "Geer",
+            "status": "begonnen"
+          },
+          {
+            "naam": "Henk",
+            "status": "begonnen"
+          },
+          {
+            "naam": "Iske",
+            "status": "begonnen"
+          }
+        ]
+      },
+      {
+        "naam": "opgave 2",
+        "details": "Lorem ipsum dolor sit amet...",
+        "studentVoortgang": [
+          {
+            "naam": "Anna",
+            "status": "niet begonnen"
+          },
+          {
+            "naam": "Bert",
+            "status": "niet begonnen"
+          },
+          {
+            "naam": "Caro",
+            "status": "hulpvraag"
+          },
+          {
+            "naam": "Derk",
+            "status": "hulpvraag"
+          },
+          {
+            "naam": "Eddy",
+            "status": "begonnen"
+          },
+          {
+            "naam": "Fien",
+            "status": "niet begonnen"
+          },
+          {
+            "naam": "Geer",
+            "status": "niet begonnen"
+          },
+          {
+            "naam": "Henk",
+            "status": "niet begonnen"
+          },
+          {
+            "naam": "Iske",
+            "status": "niet begonnen"
+          }
+        ]
+      },
+      {
+        "naam": "opgave 3",
+        "details": "Lorem ipsum dolor sit amet...",
+        "studentVoortgang": [
+          {
+            "naam": "Anna",
+            "status": "niet begonnen"
+          },
+          {
+            "naam": "Bert",
+            "status": "niet begonnen"
+          },
+          {
+            "naam": "Caro",
+            "status": "niet begonnen"
+          },
+          {
+            "naam": "Derk",
+            "status": "niet begonnen"
+          },
+          {
+            "naam": "Eddy",
+            "status": "niet begonnen"
+          },
+          {
+            "naam": "Fien",
+            "status": "niet begonnen"
+          },
+          {
+            "naam": "Geer",
+            "status": "niet begonnen"
+          },
+          {
+            "naam": "Henk",
+            "status": "niet begonnen"
+          },
+          {
+            "naam": "Iske",
+            "status": "niet begonnen"
+          }
+        ]
+      }
+    ]
+  }
+]
