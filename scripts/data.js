@@ -105,6 +105,8 @@ for(vaknaam of VAK_NAMEN){
 
 localStorage.setItem("vak-data", JSON.stringify(vakdata));
 
+console.log(vakdata);
+
 // debug only
 function htmlLog(str){
 	$('#logging').show();
