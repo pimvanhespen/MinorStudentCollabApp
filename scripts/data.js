@@ -1,4 +1,5 @@
 // placehlders for generated data.
+
 var vakdata = new Array();
 var studenten = new Array();
 
@@ -109,16 +110,26 @@ for(vaknaam of VAK_NAMEN){
 	vakdata.push(vak);
 }
 
-localStorage.setItem("vak-data", JSON.stringify(vakdata));
+var last = lastStore();
+if(null === last){
+	console.log('storing data!')
+	setStoredData(vakdata);
+} else {
+	// get current data
 
-console.log(vakdata);
+	// update with new student
 
-// debug only
-function htmlLog(str){
-	$('#logging').show();
-	$('#logging').append("<br>").append("<code style='white-space: pre;'>" + str + "</code>");	
+	// store data
 }
+// localStorage.setItem("vak-data", JSON.stringify(vakdata));
+// console.log(vakdata);
 
-function pretty(obj){
-	return JSON.stringify(obj, null, 2);
-}
+// // debug only
+// function htmlLog(str){
+// 	$('#logging').show();
+// 	$('#logging').append("<br>").append("<code style='white-space: pre;'>" + str + "</code>");	
+// }
+
+// function pretty(obj){
+// 	return JSON.stringify(obj, null, 2);
+// }

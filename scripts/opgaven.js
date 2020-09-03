@@ -12,10 +12,6 @@ function vakListHTML(vak){
 	return "<h5>" + vak.naam +  "</h5>";
 }
 
-function getStoredData(){
-	return JSON.parse(localStorage.getItem("vak-data"));
-}
-
 function findVakOpgaveDetails(vakNaam, opgaveNaam){
 	var data = getStoredData();
 
