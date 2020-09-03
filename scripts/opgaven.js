@@ -35,6 +35,10 @@ function studentListHTML(student){
 	return '<tr class="student" data-contact="'+ student.contact +'"><td>' + student.naam + '</td><td>' + student.status.icon + ' (' + student.status.text + ')</td></tr>';
 }
 
+function reload(){
+	showOpgaveDetails(CURRENT_OPGAVE);
+}
+
 function showOpgaveDetails(opgave){
 	CURRENT_OPGAVE = opgave;
 	$("#opgave-naam").text(opgave.naam);
