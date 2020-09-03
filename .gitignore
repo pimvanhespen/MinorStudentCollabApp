@@ -351,3 +351,4 @@ MigrationBackup/
 
 # JetBrains software
 .idea
+dist
