@@ -110,9 +110,10 @@ for(vaknaam of VAK_NAMEN){
 	vakdata.push(vak);
 }
 
+console.log(vakdata);
+
 var last = lastStore();
 if(null === last){
-	console.log('storing data!')
 	setStoredData(vakdata);
 } else {
 	// get current data
